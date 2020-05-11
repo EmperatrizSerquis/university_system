@@ -22,7 +22,12 @@ class Courses extends Trongate {
 
     $sql = '
        SELECT
-         c.*,
+         c.id,
+         c.url_string,
+         c.course_title,
+         c.start_date,
+         c.finish_date,
+         c.started_time,
          l.first_name,
          l.last_name
        FROM
